@@ -83,16 +83,27 @@ var Stopwatch = function () {
         value: function add() {
             if (this.running === false) {
                 var innerDisplay = this.display.innerText;
-                // console.log(innerDisplay); 
-                var results = $('.results');
-                $('<li>').addClass('list-element').text(innerDisplay).appendTo(results);
+                // let results = $('.results');
+                var results = document.querySelector('.results');
+                // $('<li>').addClass('list-element').text(innerDisplay).appendTo(results);
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(innerDisplay));
+                results.appendChild(li);
             }
         }
     }, {
         key: 'clean',
         value: function clean() {
-            var listElement = $('.list-element');
-            listElement.remove();
+            //jquery
+            // var listElement = $('.list-element');
+            // listElement.remove();
+
+            //delete last li
+            // let li = document.querySelector('li');
+            // li.remove();
+
+            var results = document.querySelector('.results');
+            results.innerHTML = "";
         }
     }]);
 

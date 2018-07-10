@@ -1,32 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
 body {
-    margin: 100px auto;
-    background-color: rgb(66, 66, 163);
+    background-color: #4242a3;
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 80px;
     text-align: center;
-    color: white;
+    color: #ffffff;
     font-family: Righteous;
     font-size: 26px;
 }
 
 .button {
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     padding: 5px 10px;
     margin: 20px 5px;
 }
 
 .button:hover {
-    border: 2px solid rgb(255, 93, 120);
+    border: 2px solid #ff5d78;
 }
 
 a:visited, a:link {
-    color: white;
+    color: #ffffff;
 }
 
 a:hover, a:active {
-    color: rgb(255, 93, 120);
+    color: #ff5d78;
 }
 
 .stopwatch {
@@ -38,4 +42,8 @@ ul {
     list-style-type: circle;
     display: inline-block;
     padding-right: 40px;   
+}
+
+li {
+    text-align: left;
 }

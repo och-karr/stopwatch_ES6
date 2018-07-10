@@ -2,7 +2,7 @@
   "name": "zadanie_15_3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel script.js --watch --out-file script-compiled.js"
